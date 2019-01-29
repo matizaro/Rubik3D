@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mycompany.myjpctapp.screens.EndScreenActivity"
+    android:background="#3A393F">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout2"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="You did it!"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Below Top 5"
+                android:id="@+id/endHSText"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" in highscores"
+                android:id="@+id/textView4"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/endMovesText"
+            android:textColor="#060606"
+            android:background="@raw/circle"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00:00:00"
+            android:id="@+id/finalTimeText"
+            android:textColor="#E6E6E6"
+            android:gravity="top"
+            android:layout_above="@+id/endMovesText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="menu"
+            android:id="@+id/endMenuButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:textSize="25sp"
+            android:background="@raw/button" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"    tools:context=".MainMenuActivity"
+    android:background="@raw/bg_small">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:id="@+id/selectGameButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:background="@raw/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/settingsButton"
+        android:background="@raw/button"
+        android:layout_below="@+id/selectGameButton"
+        android:layout_alignLeft="@+id/highscoresButton"
+        android:layout_alignStart="@+id/highscoresButton"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highscores"
+        android:id="@+id/highscoresButton"
+        android:layout_below="@+id/settingsButton"
+        android:layout_alignLeft="@+id/selectGameButton"
+        android:layout_alignStart="@+id/selectGameButton"
+        android:background="@raw/button"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="credits"
+        android:id="@+id/creditsButton"
+        android:layout_below="@+id/highscoresButton"
+        android:layout_alignRight="@+id/highscoresButton"
+        android:layout_alignEnd="@+id/highscoresButton"
+        android:layout_alignLeft="@+id/highscoresButton"
+        android:layout_alignStart="@+id/highscoresButton"
+        android:background="@raw/button"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
